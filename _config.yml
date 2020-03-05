@@ -46,7 +46,7 @@ collections:
   blanketter:
     _hide_content: true
     output: false
-  landing_pages:
+  viktiga-datum:
     _hide_content: true
     output: false
 
