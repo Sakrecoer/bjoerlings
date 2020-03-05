@@ -1,0 +1,111 @@
+# ----
+# Site
+
+title: Stiftelsen Ann Och T.E. Björlings Understödsfond För Sverige
+url: "https://www.bjoerlings.se"
+google_analytics_key: 
+# google_maps_javascript_api_key:
+# disqus_shortname:
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /siteicon.png
+description: >-
+  Stiftelsen vill stödja behövande, äldre personer som har fyllt 55 år.
+author:
+  name: Harriet Fristedt
+  email: harriet.fristedt@mail.com
+  telephone: 070-555 555 555
+# social:
+#   name: Nordforce
+#   links:
+#     - https://twitter.com/NordforceTech
+#     - https://www.linkedin.com/company/nordforce-technology-ab/
+#     - https://www.facebook.com/nordforcetechnology/
+#     - https://www.instagram.com/nordforcetech/
+lang: sv_SE
+# -----
+# Build
+
+timezone: "Europe/Stockholm"
+
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-last-modified-at
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENCE
+
+# collections:
+#   team_members:
+#     _hide_content: true
+#   landing_pages:
+#     output: true
+#   projects:
+#     output: true
+
+sass:
+  sass_dir: _sass
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      type: "posts"
+    values:
+      layout: "post"
+      _options:
+        image:
+          width: 2000
+          height: 1322
+          resize_style: cover
+          uploads_dir: "/images/post_uploads"
+        content:
+          width: 1500
+          height: 2000
+          uploads_dir: "/images/post_uploads"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      image: "/images/stripes.jpg"
+      layout: default
+      _options:
+        image:
+          width: 2000
+          height: 1322
+          resize_style: cover
+        bottom_image:
+          width: 2000
+          height: 1322
+          resize_style: cover
+
+# -----------
+# CloudCannon
+
+# social_icons:
+#   - Facebook
+#   - Google Plus
+#   - Instagram
+#   - LinkedIn
+#   - Pinterest
+#   - Tumblr
+#   - Twitter
+#   - YouTube
+#   - Email
+#   - RSS
+
+_comments:
+  description: Text shown when sharing on social media
+  blurb: Short bio or description of this person
