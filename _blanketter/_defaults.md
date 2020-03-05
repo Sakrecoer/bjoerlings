@@ -1,5 +1,5 @@
 ---
 title:
 description:
-PDF_file:
+document:
 ---
