@@ -1,4 +1,7 @@
 ---
+title: 
+description:
+image: /images/glada-seniorer1.webp
 ---
 <!DOCTYPE HTML>
 <!--
@@ -28,20 +31,7 @@
 						</nav>
 					</header>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Meny</h2>
-							<ul class="links">
-								<li><a href="{{ relBase }}/#banner">Hem</a></li>
-								<li><a href="{{ relBase }}/generic.html">Stiftelsens Ändamål</a></li>
-								<li><a href="{{ relBase }}/#four">Ansökningsprocess</a></li>
-                <li><a href="{{ relBase }}/#footer">Kontakt</a></li>
-                 
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
+{% include menu.html %}
 
 				<!-- Banner -->
 					<section id="banner" style="background: transparent;">
@@ -58,8 +48,8 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="{{ relBase }}/generic/" class="image"><img src="{{ relBase }}/images/Lyckligt-hogt.webp" alt="" /></a>
-									<div class="content">
+									<a href="{{ relBase }}/generic/" class="image"><img src="{{ relBase }}/images/Lyckligt-hogt.webp" alt="" class="editable" /></a>
+									<div class="content ediable">
 										<h2 class="major">STIFTELSENS ÄNDAMÅL</h2>
 										<p>Stiftelsens ändamål är, att ur deras nettoinkomst utbetalas en del åt en eller flera i knappa omständigheter varande bildade äldre personer s.k. <em>pauvres honteux,</em> företrädesvis sådana som haft sin inkomst på affärsmannabanan, under envars livstid somunderstöd såvida undetödet till följd av understödstagarens förändrade förmögenhetsförhållanden eller andra skäl prövas böra indragas, samt att andra delen av nettoinkomsten tilldelas en eller flera personer, som avlagt studentexamen eller innehava annan högskoleutbildning och vilka utan eget förvållande förlorat sin anställning och till följd därav varit utan inkomst under minst tre månader och råkat i ekonomiskt betryck, och åtnjutes understödet så länge detta betryck fortgår. Ovan nämnda understöd tilldelas företrädesvis personer med svenska språket som modersmål samt familjeförsörjare framom andra.</p>
 										<a href="{{ relBase }}/generic/" class="special">Lär mer</a>
@@ -76,16 +66,16 @@
 									<p>Beskrivning av tider, viktiga datum och länkar till blanketter</p>
 									<section class="features">
 										<article>
-											<a href="{{ relBase }}/generic/" class="image"><img src="{{ relBaser }}/images/blanketter.png" alt="" /></a>
+											<a href="{{ relBase }}/blanketter/" class="image"><img src="{{ relBaser }}/images/blanketter.png" alt="" /></a>
 											<h3 class="major">Blanketter</h3>
 											<p>Länkar till blanketter</p>
-											<a href="{{ relBase }}/generic/" class="special">Hämta blanketter</a>
+											<a href="{{ relBase }}/blanketter/" class="special">Hämta blanketter</a>
 										</article>
 										<article>
-											<a href="{{ relBase }}/generic/" class="image"><img src="{{ relBaser }}/images/kalender.png" alt="" /></a>
+											<a href="{{ relBase }}/datum/" class="image"><img src="{{ relBaser }}/images/kalender.png" alt="" /></a>
 											<h3 class="major">Viktiga Datum</h3>
 											<p>Lista på viktiga datum</p>
-											<a href="{{ relBase }}/generic/" class="special">Läs mer</a>
+											<a href="{{ relBase }}/datum/" class="special">Läs mer</a>
 										</article>
 										
 									</section>
@@ -94,47 +84,7 @@
 
 					</section>
 
-				<!-- Footer -->
-					<section id="footer" style="background: #2e3141cc">
-						<div class="inner">
-							<h2 class="major">Kontakta Oss</h2>
-							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="4"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-							<ul class="contact">
-								<li class="icon solid fa-home">
-									Untitled Inc<br />
-									1234 Somewhere Road Suite #2894<br />
-									Nashville, TN 00000-0000
-								</li>
-								<li class="icon solid fa-phone">(000) 000-0000</li>
-								<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
-								<li class="icon brands fa-twitter"><a href="#">twitter.com/untitled-tld</a></li>
-								<li class="icon brands fa-facebook-f"><a href="#">facebook.com/untitled-tld</a></li>
-								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy;2019 by Stiftelsen Ann och T.E. Björlings Understödsfond för Sverige. </li><li>Design: Set Hallström, based on <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
+				{% include footer.html %}
 
 			</div>
 
