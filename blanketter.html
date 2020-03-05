@@ -16,27 +16,15 @@ image: /images/blanketter.png
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
   <link rel="stylesheet" href="{{ relBase }}/assets/css/main.css" />
-  <noscript>
-    <link rel="stylesheet" href="{{ relBase }}/assets/css/noscript.css" /></noscript>
+  <noscript><link rel="stylesheet" href="{{ relBase }}/assets/css/noscript.css" /></noscript>
 </head>
 
 <body class="is-preload">
-
   <!-- Page Wrapper -->
   <div id="page-wrapper">
-
-    <!-- Header -->
-    <header id="header">
-      <h1><a href="index.html">Solid State</a></h1>
-      <nav>
-        <a href="#menu">Meny</a>
-      </nav>
-    </header>
-
     {% include menu.html %}
-
     <!-- Wrapper -->
-    <section id="wrapper"> 
+    <section id="wrapper">
       <header style="background: transparent;">
         <div class="inner">
           <h2>{{ page.title }}</h2>
@@ -87,7 +75,7 @@ image: /images/blanketter.png
 
     </section>
 
-{% include footer.html %}
+    {% include footer.html %}
 
   </div>
 
