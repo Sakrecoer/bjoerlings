@@ -42,13 +42,14 @@ exclude:
   - README.md
   - LICENCE
 
-# collections:
-#   team_members:
-#     _hide_content: true
-#   landing_pages:
-#     output: true
-#   projects:
-#     output: true
+collections:
+  blanketter:
+    _hide_content: true
+    output: false
+  landing_pages:
+    _hide_content: true
+    output: false
+
 
 sass:
   sass_dir: _sass
