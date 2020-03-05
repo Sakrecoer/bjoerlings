@@ -1,16 +1,19 @@
+---
+---
 <!DOCTYPE HTML>
 <!--
 	Solid State by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+{% include relBase.html %}
 <html>
 	<head>
 		<title>Solid State by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="{{ relBase }}/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="{{ relBase }}/assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
 
@@ -19,7 +22,7 @@
 
 				<!-- Header -->
 					<header id="header" class="alt">
-						<h1><a href="index.html">Solid State</a></h1>
+						<h1><a href="{{ relBase }}/index.html">Solid State</a></h1>
 						<nav>
 							<a href="#menu">Menu</a>
 						</nav>
@@ -28,24 +31,24 @@
 				<!-- Menu -->
 					<nav id="menu">
 						<div class="inner">
-							<h2>Menu</h2>
+							<h2>Meny</h2>
 							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="generic.html">Generic</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								<li><a href="#">Log In</a></li>
-								<li><a href="#">Sign Up</a></li>
+								<li><a href="{{ relBase }}/index.html">Hem</a></li>
+								<li><a href="{{ relBase }}/generic.html">Stiftelsens Ändamål</a></li>
+								<li><a href="{{ relBase }}/elements.html">Ansökningsprocess</a></li>
+                <li><a href="{{ relBase }}/#footer">Kontakt</a></li>
+                 
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
 					</nav>
 
 				<!-- Banner -->
-					<section id="banner">
+					<section id="banner" style="background: transparent;">
 						<div class="inner">
 							<div class="logo"><span class="icon fa-gem"></span></div>
-							<h2>This is Solid State</h2>
-							<p>Another free + fully responsive site template by <a href="http://html5up.net">HTML5 UP</a></p>
+							<h2>Stiftelsen Ann Och T.E. Björlings Understödsfond För Sverige</h2>
+							<p>Stiftelsen vill stödja behövande, äldre personer som har fyllt 55 år.</a></p>
 						</div>
 					</section>
 
@@ -96,28 +99,17 @@
 									<section class="features">
 										<article>
 											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3 class="major">Sed feugiat lorem</h3>
+											<h3 class="major">Ansökningsprocess</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="#" class="special">Formulär</a>
 										</article>
 										<article>
 											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3 class="major">Nisl placerat</h3>
+											<h3 class="major">Viktiga Datum</h3>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
+											<a href="#" class="special">Läs mer</a>
 										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3 class="major">Ante fermentum</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-											<h3 class="major">Fusce consequat</h3>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing vehicula id nulla dignissim dapibus ultrices.</p>
-											<a href="#" class="special">Learn more</a>
-										</article>
+										
 									</section>
 									<ul class="actions">
 										<li><a href="#" class="button">Browse All</a></li>
@@ -128,9 +120,9 @@
 					</section>
 
 				<!-- Footer -->
-					<section id="footer">
+					<section id="footer" style="background: #2e3141cc">
 						<div class="inner">
-							<h2 class="major">Get in touch</h2>
+							<h2 class="major">Kontakta Oss</h2>
 							<p>Cras mattis ante fermentum, malesuada neque vitae, eleifend erat. Phasellus non pulvinar erat. Fusce tincidunt, nisl eget mattis egestas, purus ipsum consequat orci, sit amet lobortis lorem lacus in tellus. Sed ac elementum arcu. Quisque placerat auctor laoreet.</p>
 							<form method="post" action="#">
 								<div class="fields">
@@ -164,7 +156,7 @@
 								<li class="icon brands fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>
 							</ul>
 							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy;2019 by Stiftelsen Ann och T.E. Björlings Understödsfond för Sverige. </li><li>Design: Set Hallström, based on <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
@@ -172,12 +164,18 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
+			<script src="{{ relBase }}/assets/js/jquery.min.js"></script>
+			<script src="{{ relBase }}/assets/js/jquery.scrollex.min.js"></script>
+			<script src="{{ relBase }}/assets/js/browser.min.js"></script>
+			<script src="{{ relBase }}/assets/js/breakpoints.min.js"></script>
+			<script src="{{ relBase }}/assets/js/util.js"></script>
+			<script src="{{ relBase }}/assets/js/main.js"></script>
+      <style>
+        body {
+          background-image: url({{ relBase }}/images/glada-seniorer1.webp);
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
 	</body>
 </html>
